@@ -1,0 +1,42 @@
+.navdtop {
+    margin: 150px 0 0px 0;
+}
+
+h1 {
+    font-size: 500%;
+    text-align: center;
+    font-family: "Cambria", Cambria, serif;
+    margin: 200px 0px 70px;
+}
+
+h2 {
+    font-size: 350%;
+    text-align: center;
+    font-family: "Cambria", Cambria, serif;
+    margin: 200px 0px 0px;
+    margin-bottom: 70px;
+}
+
+li {
+    margin: 30px 0px;
+    font-size: 130%;
+}
+
+ul {
+    margin: 0px 30px;
+    font-family: "Cambria", Cambria, serif;
+}
+
+p {
+    text-indent: 50px;
+    font-size: 130%;
+    margin: 100px 0px 0px 0px;
+    font-family: "Cambria", Cambria, serif;
+    word-break: break-all;
+    white-space: normal;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 120%;
+}
