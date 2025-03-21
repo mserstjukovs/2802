@@ -6,14 +6,14 @@ h1 {
     font-size: 500%;
     text-align: center;
     font-family: "Cambria", Cambria, serif;
-    margin: 200px 0px 70px;
+    margin: 100px 0px 70px;
 }
 
 h2 {
     font-size: 350%;
     text-align: center;
     font-family: "Cambria", Cambria, serif;
-    margin: 200px 0px 0px;
+    margin: 100px 0px 0px;
     margin-bottom: 70px;
 }
 
@@ -40,3 +40,7 @@ figcaption {
     font-style: italic;
     font-size: 120%;
 }
+
+html {
+    scroll-behavior: smooth;
+  }

@@ -9,11 +9,10 @@
         <link rel="stylesheet" type="text/css" href="css/mansStils.css" />
     </head>
     <body style="font-family: Cambria">
-        <div class="w3-bar w3-black w3-card w3-top">
+        <div id="navbar" class="w3-bar w3-black w3-card w3-top">
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">SĀKUMS</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PAGĀJUŠĀ GADA PRASMES</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ŠĪ GADA PRASMES</a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    <a href="#previous" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PAGĀJUŠĀ GADA PRASMES</a>
+    <a href="#current" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ŠĪ GADA PRASMES</a>
         </div>
     <div>
             <h1 class="navtop">Mans datorikas potrfolio</h1>
@@ -36,7 +35,10 @@
             </ul>
     </div>
             <div>
+                <div id="previous">
+                <br><br><br><br>
                 <h2>Pagājušā gada prasmes</h2>
+                </div>
                 <p>
                     HTML:
                     <ul>
@@ -64,8 +66,33 @@
                  <li>Lorem ipsum.</li>
                     </ul>
                 </p>
+            </div>
+
+            <div>
+                <div id="current">
+                <br><br><br><br>
+                <h2>Šī gada prasmes</h2>
+                </div>
                 <p>
-                    Excel:
+                    HTML:
+                    <ul>
+                 <li>Lorem ipsum;</li>
+                 <li>Lorem ipsum;</li>
+                 <li>Lorem ipsum;</li>
+                 <li>Lorem ipsum.</li>
+                    </ul>
+                </p>
+                <p>
+                    JavaScript:
+                    <ul>
+                 <li>Lorem ipsum;</li>
+                 <li>Lorem ipsum;</li>
+                 <li>Lorem ipsum;</li>
+                 <li>Lorem ipsum.</li>
+                    </ul>
+                </p>
+                <p>
+                    Word:
                     <ul>
                  <li>Lorem ipsum;</li>
                  <li>Lorem ipsum;</li>
@@ -74,5 +101,16 @@
                     </ul>
                 </p>
             </div>
+        </div>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        </script>
     </body>
 </html>
