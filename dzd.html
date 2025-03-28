@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Gaidot dzimšanas dienu...</h1>
+        <hr>
+        <script>
+            function dienas() {
+                let g = document.getElementById("gads");
+                let m = document.getElementById("menesis");
+                let d = document.getElementById("datums");
+                let palika = 0;
+
+                palika = (g*365 + (m-1)*30 + d) - (2025*365 + (3-1)*30 + 28);
+
+                document.getElementById("dienas").innerHTML = palika;
+            }
+        </script>
+        <form>
+            <p>Ievadi pilnu datumu, kad Tev būs tuvākā dzimšanas diena</p>
+            <p>gads</p>
+            <input name="gads" type="text">
+            <p>mēnesis</p>
+            <input name="menesis" type="text">
+            <p>diena</p>
+            <input name="datums" type="text">
+            <input type="button" name="poga" value="Aprēķināt dienu skaitu līdz dzimšanas dienai" onclick="dienas();">
+            <p>Līdz svētkiem atlikušas <input type="text" name="dienas" value=""> dienas : ))</p>
+        </form>
+    </body>
+</html>
